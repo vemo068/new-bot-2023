@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "tele-news-335813",
+    "private_key_id": "40a859d9519ec13cfa80da6363c48a984c90c846",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCjCMau/aa1SdZP\n2zWP2/DgRIOnl46JaWIBAKtcueHyuPUS+hX4HXKNVVIsDuz79QAHV7NFFeXcevtH\n/1vo2iREbEmslIjUbKD7JG7ZVMOUODMH+LosFNwejwaDrO/OQFG2DFvCUcxz1Mj+\nAFSbUqH9xBmYeJvGpyXlqz3qXrYnqECVu5PgW2SggSP1VrVxhQ563SKEgCN3yV2X\nGVw07AyE8/bgJkGO5/9HtyKD8rRNOZocCAxkmM/iTVwz7rLzow/4kgkEhm4+UBRd\naDO9IH7BpMDWVsFESc3fyS6uA4wjCbxj5+gz6I9TryIMCUAUhjwx/h8RqbeNWGW6\nYxBriLVRAgMBAAECggEAGXGhMGY9wkVHwSbA8TauHRIUSe+JO0DLHsTv+YS5Epxz\nAwcsrpBJ9GzAakfaDGhsHLk/LSUBvqsi1FWyDmEdD+CmjtyPjjd12DwTYK+t5k/v\nBut2grKut8YyihJPSq0XE4ZSO71wXxNyWtHKYoM+7M/R/s2z4gjsDS/wdcdaPk3w\nIcQim4+/MTITOBM0TnTLPSXy/ctUOmneaA96vX4nk0RociPNdWnosI0uas4/F9H3\nHggNVbElfg2y6Xoxq4ViurxdHowB8qQdgX0juZYgpeNnUGAJl3/AoAU9CKvnsa4a\ng/W6bcVk1526XyRkmtGo65r+JnQKrnfZYkANNirXUQKBgQDNLj4Xv97/+lPKLg0g\ndoZAmngRIMv44EId40eU2tad9/WVlUFNCR1QPShH6eHlUbkZ3x3ZzC9hGoxOiR2k\nuy3Wzi8r+swBWKRN4KL7YJIis56F1oyaDndIe+vUD9SucS/IABjFrz4XUAXynm9p\nm7kM3tR1fBe81uvp3OTdh/Cm5wKBgQDLai/I0wlKGC3XRZMonKhCqjObQef5/cu1\nZGETnfDcvo1a0j8rwccgg0CwJwOlSCpTlfCe+pCZWaUyVLAjZwk9kVRZnHjWDd3U\nkFPBwSCs2VyAYtJp5mVKOfgPFOYSURfSf6K5G3JwFGqP62ET3Q/4Ook7BL7nU76v\nEp6M1scTBwKBgQCpH6jG4rzpumk+id8AFzJqJek6FRKMPi3BfQoPxKKK60xe0/xT\nh2PGM+L0A/DTmR0+Gg7867VSERP92D+6/R63pJR1Z/CoW2xzVOqC0gMi33OXVlXm\n1m20LZEh5zqj32BHNu00ZVKE3M1KQxYKsvVBipsNjA/09CLZTd7IS7ktmQKBgEqS\ngTYkd/Fb7+JNtWdcFytpbkXq4Xp6mqXDSPuCGX0ztmqnTVVjUvcOZzas9t8vF6VR\nAMenoD836CINfg1chry1fLDldj8zEjINP0d2392+SfUfRXhhaJzPp6sPxFDOvecD\nt8oYz9lbAr4EUrCPiH0+KHUkhkAUKYHRV6LWUmEdAoGBAJZIZfxr4QKNHdGICy7B\nEmQGls95NXgAkZAZ6zHYvD0BG9ZCE0B7PUtnNLoXXXIUo5OOkhPNBVnfy03eudA5\nuJB8wf94u6DSVz7TBgyiR+qm6uQ2zRK6+werCcJh5MF/VruvjbChfeTt7k9480N4\nOcqNG6KDoH8JzCu1pnCMc1jw\n-----END PRIVATE KEY-----\n",
+    "client_email": "telenews@tele-news-335813.iam.gserviceaccount.com",
+    "client_id": "116241102923205774093",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/telenews%40tele-news-335813.iam.gserviceaccount.com"
+  }
