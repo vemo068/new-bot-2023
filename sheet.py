@@ -1,6 +1,7 @@
 import gspread
 import datetime
 from oauth2client.service_account import ServiceAccountCredentials
+import asyncio
 
 
 scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
@@ -18,10 +19,16 @@ def checkNews(sheetName,news):
     values=[str(val).replace("\xa0","").replace("\t","") for val in values]
     newValues=values[0:14]
     if not news in newValues:
-        theSheet.insert_row([news,today])
+        
         return True
     else:
         return False
+
+
+
+def insert_news(news,sheetName):
+    theSheet = client.open(sheetName).sheet1
+    theSheet.insert_row([news,today])
 
 
 
