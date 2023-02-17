@@ -43,7 +43,7 @@ async def telenews_scraping(faculty:Faculty):
                span = div.find('span').text.strip()
                spans.append(span)
             
-            await send_message_with_photo_pdfs(televars.api_key,faculty.chat_id,photo_url,content,description,links,spans)
+            await send_message_with_photo_pdfs(televars.api_key,faculty.chat_id,photo_url,content,description,link,links,spans)
             sheet.insert_news(content,faculty.sheetName)
-            
+      print('finished'+faculty.sheetName)
 
