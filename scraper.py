@@ -11,8 +11,9 @@ async def telenews_scraping(faculty:Faculty):
 
    response = requests.get(url)
    soup = BeautifulSoup(response.content, "html.parser")
-
-   for div in soup.find_all("div", {"class": "col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 px-0"}):
+   all_divs=soup.find_all("div", {"class": "col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 px-0"})
+   ten_divs=all_divs[0:8]
+   for div in ten_divs:
       content = div.find("p", {"class": "mb-1 px-2"}).text
       if sheet.checkNews(faculty.sheetName,content):
          link = "http://faculty.univ-eloued.dz" + div.find("a")["href"]

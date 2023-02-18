@@ -8,6 +8,7 @@ async def send_message_with_photo_pdfs (bot_token, chat_id, photo_url, caption, 
     
     message = f"<b>{caption}</b>\n{description}"
     if len(message) > MAX_MESSAGE_LENGTH:
+        print("message too long")
         message=save_link
 
     if pdf_urls:
