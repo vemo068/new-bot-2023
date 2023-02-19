@@ -43,8 +43,13 @@ async def telenews_scraping(faculty:Faculty):
                   links.append(None)
                span = div.find('span').text.strip()
                spans.append(span)
-            
-            await send_message_with_photo_pdfs(televars.api_key,faculty.chat_id,photo_url,content,description,link,links,spans)
-            sheet.insert_news(content,faculty.sheetName)
+            try: 
+               sent_message= await send_message_with_photo_pdfs(televars.api_key,faculty.chat_id,photo_url,content,description,link,links,spans)
+               if sent_message is not None:
+                  sheet.insert_news(content,faculty.sheetName)
+               else :
+                  print("not sent")
+            except Exception as e:
+               print(e)
       print('finished'+faculty.sheetName)
 

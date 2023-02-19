@@ -16,7 +16,7 @@ def checkNews(sheetName,news):
 
     # Initialize a list to store the values
     values = theSheet.col_values(1)
-    values=[str(val).replace("\xa0","").replace("\t","") for val in values]
+    values=[str(val) for val in values]
     newValues=values[0:14]
     if not news in newValues:
         
@@ -32,3 +32,15 @@ def insert_news(news,sheetName):
 
 
 
+def checkSheet(sheetName):
+    theSheet = client.open(sheetName).sheet1
+
+    # Initialize a list to store the values
+    values = theSheet.col_values(1)
+    values=[str(val) for val in values]
+    newValues=values[0:3]
+    for v in newValues:
+        print(v+"\n")
+
+
+#checkSheet("telebot iktisad")

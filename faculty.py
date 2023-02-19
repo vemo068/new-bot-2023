@@ -40,4 +40,4 @@ sourceIsl = 'http://faculty.univ-eloued.dz/faculty/isi'
 telebot_isl = Faculty(chatidIsl, 'telebot isl', sourceIsl)
 
 # Create a list of all the objects
-faculti_list = [telebot_lang, telebot_iktis, telebot_ijti, telebot_se, telebot_ticno, telebot_bio, telebot_ho, telebot_isl]
+faculti_list = [telebot_isl,telebot_se, telebot_ticno, telebot_bio, telebot_ho, telebot_lang, telebot_iktis,telebot_ijti]

@@ -7,15 +7,19 @@ async def send_message_with_photo_pdfs (bot_token, chat_id, photo_url, caption, 
     bot = telegram.Bot(token=bot_token)
     
     message = f"<b>{caption}</b>\n{description}"
-    if len(message) > MAX_MESSAGE_LENGTH:
-        print("message too long")
-        message=save_link
+    save_message=f"<b>{caption}</b>\n<a href={save_link}>الرابط</a>"
 
     if pdf_urls:
         for i, pdf_url in enumerate(pdf_urls):
             title = pdf_titles[i] if pdf_titles and i < len(pdf_titles) else "link1"
             message += f"\n<a href='{pdf_url}'>{title}</a>"
+            
     try :
         await bot.send_photo(chat_id=chat_id, photo=photo_url, caption=message, parse_mode='html',write_timeout=60)
     except Exception as e:
-        await bot.send_message(chat_id=adid, text=e)
+        try:
+            await bot.send_photo(chat_id=chat_id, photo=photo_url, caption=save_message, parse_mode='html',write_timeout=60)
+            print(e)
+        except Exception as ee:
+            print(ee)
+            await bot.send_message(chat_id=adid, text="too long  "+str(len(message))+"--"+str(len(save_message)))
