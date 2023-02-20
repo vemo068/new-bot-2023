@@ -7,9 +7,11 @@ MAX_MESSAGE_LENGTH = 4000 # maximum message length allowed by Telegram
 async def send_message_with_photo_pdfs (bot_token, faculty, photo_url, caption, description,save_link, pdf_urls=None, pdf_titles=None):
     bot = telegram.Bot(token=bot_token)
     
+    
     message = f"<b>{caption}</b>\n{description}"
-    sv_link=save_link["href"]
-    save_message=f"<b>{caption}</b>\n<a href='{sv_link}'>الرابط</a>"
+    
+   
+    save_message=f"<b>{caption}</b>\n<a href='{save_link}'>الرابط</a>"
 
     if pdf_urls:
         for i, pdf_url in enumerate(pdf_urls):

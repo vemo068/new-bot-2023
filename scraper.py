@@ -16,12 +16,12 @@ async def telenews_scraping(faculty:Faculty):
    for div in ten_divs:
       content = div.find("p", {"class": "mb-1 px-2"}).text
       if sheet.checkNews(faculty.sheetName,content):
-         link = "http://faculty.univ-eloued.dz" + div.find("a")["href"]
+         link_second = "http://faculty.univ-eloued.dz" + div.find("a")["href"]
          photo_url="http://faculty.univ-eloued.dz"+div.find("img")["src"]
          
 
 
-         sub_response = requests.get(link)
+         sub_response = requests.get(link_second)
          sub_soup = BeautifulSoup(sub_response.content, "html.parser")
 
          for sub_div in sub_soup.find_all("div", {"class": "body px-2 mt-2 row mx-0"}):
@@ -44,7 +44,7 @@ async def telenews_scraping(faculty:Faculty):
                span = div.find('span').text.strip()
                spans.append(span)
             
-            await send_message_with_photo_pdfs(televars.api_key,faculty,photo_url,content,description,link,links,spans)
+            await send_message_with_photo_pdfs(televars.api_key,faculty,photo_url,content,description,link_second,links,spans)
            
       print('finished'+faculty.sheetName)
 

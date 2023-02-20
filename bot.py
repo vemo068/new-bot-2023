@@ -18,7 +18,7 @@ async def process_faculties(faculties):
                 await bot.send_message(chat_id=adid, text=error_message)
             time.sleep(60)
 
-        time.sleep(7200)   
+        time.sleep(3600)   
 
 # Create a new event loop
 loop = asyncio.new_event_loop()
